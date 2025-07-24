@@ -177,7 +177,7 @@ Schema:\n{schema_context}"""
         # Create Metabase card and add to dashboard
         session = get_metabase_session()
         card = create_metabase_card(sql, name=request.question[:40], chart_type=request.chart_type)
-        dashboard_id = int(os.getenv("METABASE_DASHBOARD_ID", "3"))
+        dashboard_id = int(os.getenv("METABASE_DASHBOARD_ID"))
         dashboard_card = add_card_to_dashboard(card["id"], dashboard_id, session)
 
         return {
