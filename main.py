@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 import requests
 
-# Remove FAISS imports
+
 load_dotenv()
 # Load environment variables
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
