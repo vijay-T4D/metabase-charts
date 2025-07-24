@@ -14,8 +14,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 METABASE_URL = os.getenv("METABASE_URL")
 METABASE_USER = os.getenv("METABASE_USER")
 METABASE_PASSWORD = os.getenv("METABASE_PASSWORD")
-METABASE_DB_ID = int(os.getenv("METABASE_DB_ID", "4"))
-METABASE_DB_ID = int(os.getenv("METABASE_DB_ID", "4"))
+METABASE_DB_ID = int(os.getenv("METABASE_DB_ID"))
 VECTOR_STORE_ID = os.getenv("VECTOR_STORE_ID")
 
 # OpenAI init
